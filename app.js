@@ -57,6 +57,5 @@ playButton.addEventListener('click', () => {
     winCount.textContent = wins;
     lossCount.textContent = losses;
     drawCount.textContent = draw;
-    
-    //my code does not work. nooo!!!
+    compResult.text = compChoice;   //my code does not work. nooo!!!
 });
