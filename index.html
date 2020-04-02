@@ -5,13 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Rock Paper...And scissors</title>
 </head>
 
-<body>
-
+<body class="all">
+    <h1 class="headOne">Let's play a game.</h1>
+        <p class="directions">Directions! Pick rock, paper or scissors.
+            <br><b>Be aware! Paper beats rock, rock beats scissors, scissors beats paper!</b></p>
+    <div class="selection">
+        <p>Your three choices are:</p>
+        <button name="choices" type="radio" value="rock" checked><img id="rock1" src="https://s.yimg.com/sr/img/1/af32bd4c-4c65-3ac9-b823-927c61ecfd4d"><br>Rock!</button> 
+        <button name="choices" type="radio" value="scissors"><img id="scissors1" src="http://i.ebayimg.com/images/i/251019155191-0-1/s-l1000.jpg"><br>Scissors!</button>
+        <button name="choices" type="radio" value="paper"><img id="paper1" src="https://i.ytimg.com/vi/HBr2zDf26aY/maxresdefault.jpg"><br>Paper!</button>
+    </div>
+        <div class="submit1"><button id="submit">Press this button to play</button>
+        <br><br>
+        <button id="reset">Reset</button></div>
+        <div class="resultsOfChoice">
+            <ul class="listOfResults">
+                <li>Computer got:<span id="computerResult"></span>.</li>
+                <li>Your wins:<span id="winSpan"></span>.</li>
+                <li>Your losses:<span id="lossSpan"></span>.</li>
+                <li>Your draws:<span id ="drawSpan"></span>.</li>
+        </ul>
+    </div>
     <script type="module" src="app.js"></script>
+    <footer class="bottomPage">Did you enjoy this game?</footer>
 </body>
 
 </html>
