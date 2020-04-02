@@ -2,7 +2,7 @@ import { generateComputerThrow } from '/.getRandomThrow.js/';
 import { didWeWin } from './didWeWin';
 
 const playButton = document.getElementById('submit'); //getting the submit/playbutton
-const resetButton = document.getElementById('reset'); //getting the reset button 
+//const resetButton = document.getElementById('reset'); //getting the reset button 
 const compResult = document.getElementById('computerResult'); //the computer output
 const winCount = document.getElementById('winSpan'); //getting the win output
 const lossCount = document.getElementById('lossSpan'); //getting the loss output
