@@ -1,0 +1,52 @@
+* {
+    box-sizing: content-box;
+}
+
+.headOne {
+    margin: auto;
+    background-origin: padding-box;
+    text-align: center;
+    background-color: rgb(56, 58, 136);
+    color: darkgray;
+}
+.directions {
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+.selection {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    border: red;
+    
+}
+
+.submit1 {
+    justify-self: center;
+    text-align: center;
+    box-sizing: content-box;
+}
+#rock1 {
+    width: 9em;
+    height: auto;
+}
+#scissors1 {
+    width: 10em;
+    height: 11.3em;
+} 
+#paper1 {
+    width: 20.1em;
+    height: auto;
+}
+.listOfResults {
+    text-shadow: darkseagreen ;
+    color: firebrick;
+    text-align: center;
+    list-style: none;
+}
+.bottomPage {
+    text-align: center;
+
+}
