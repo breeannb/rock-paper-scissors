@@ -1,4 +1,5 @@
 import { generateComputerThrow } from '/.getRandomThrow.js/';
+import { didWeWin } from './didWeWin';
 
 const playButton = document.getElementById('submit'); //getting the submit/playbutton
 const resetButton = document.getElementById('reset'); //getting the reset button 
@@ -24,28 +25,38 @@ let draw = 0;
 //        return 'Scissors';
 //    }
 //} 
-//I will need to get numbers 0,1,2
+
 //console.log(compNum);//it works
 //I am going to contruct my addeventlistener to playButton since i Now that need to be done
 playButton.addEventListener('click', () => {
     const buttonChoice = document.querySelector('input[type=radio]:checked'); //referred back to notes for input type
     //let userChoice = buttonChoice.value; //buttonChoice.value is documet.querySelector
-    let UserChoice = buttonChoice.value;
-    
-    
-    
-    let computerChoice = generateComputerThrow;
+    let userChoice = buttonChoice.value;
+    let compChoice = generateComputerThrow;
 
-    if (randomNumber === 0) {
-        return 'Rock';
-    } else if (randomNumber === 1) {
-        return 'Paper';  
-    } else { 
-        return 'Scissors';
+    const weWon = didWeWin(userChoice, compChoice); //I missed this step eariler and needed to write a did you
+    //calculate if you've won
+    if (compChoice < userChoice) {
+        return 'You win';
+    } else if (compChoice > userChoice) {
+        return 'You lose';
+    } else {
+        'draw';
     }
-});
+    //change state depedning win, loss, draw
+    if (weWon === true) {
+        wins++;
+    }
+    if (weWon === false) {
+        losses++;
+    }
+    if (draw === true) {
+        draw++;
+    }
+    //outputting the text for wins, losses draws
+    winCount.textContent = wins;
+    lossCount.textContent = losses;
+    drawCount.textContent = draw;
     
- //   winCount.textContent = wins;
- //   lossCount.textContent = losses;
- //   drawCount.textContent = draw;
-//});
+    //my code does not work. nooo!!!
+});
