@@ -61,6 +61,6 @@ playButton.addEventListener('click', () => {
 });
 
 resetButton.addEventListener('click', () => {
-    return wins = 0, losses = 0;
+    return wins = 0, losses = 0, draw = 0;
     
 });
