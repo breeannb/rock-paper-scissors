@@ -4,5 +4,5 @@ export function generateComputerThrow() {
     //I'll need to creat a word for the assigned number
     let pharses = ['rock', 'paper', 'scissors'];//had to google
     let computerChoice = pharses[number];
-    computerChoice = compChoice;
+    //computerChoice = compChoice;
 }
