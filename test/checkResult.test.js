@@ -9,8 +9,7 @@ test('time to test a function', function(assert) {
 
     //Act 
     // Call the function you're testing and set the result to a const
-
-    //Assert
+        //Assert
     // Make assertions about what is expected valid result
     assert.equal(true, false);
 });

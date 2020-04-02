@@ -2,7 +2,7 @@ import { generateComputerThrow } from '/.getRandomThrow.js/';
 import { didWeWin } from './didWeWin';
 
 const playButton = document.getElementById('submit'); //getting the submit/playbutton
-//const resetButton = document.getElementById('reset'); //getting the reset button 
+const resetButton = document.getElementById('reset'); //getting the reset button 
 const compResult = document.getElementById('computerResult'); //the computer output
 const winCount = document.getElementById('winSpan'); //getting the win output
 const lossCount = document.getElementById('lossSpan'); //getting the loss output
@@ -16,7 +16,7 @@ let losses = 0;
 let draw = 0;
 
 //did not follow directions, needs to be separate js page
-//function generateComputerThrow(randomNumber) {
+//function generateComputerThrow(randomNumber) 
 //    if (randomNumber === 0) {
 //        return 'Rock';
 //    } else if (randomNumber === 1) {
@@ -26,12 +26,12 @@ let draw = 0;
 //    }
 //} 
 
-//console.log(compNum);//it works
+
 //I am going to contruct my addeventlistener to playButton since i Now that need to be done
 playButton.addEventListener('click', () => {
     const buttonChoice = document.querySelector('input[type=radio]:checked'); //referred back to notes for input type
-    //let userChoice = buttonChoice.value; //buttonChoice.value is documet.querySelector
-    let userChoice = buttonChoice.value;
+    let userChoice = buttonChoice.value; //buttonChoice.value is documet.querySelector
+    //let userChoice = buttonChoice.value;
     let compChoice = generateComputerThrow;
 
     const weWon = didWeWin(userChoice, compChoice); //I missed this step eariler and needed to write a did you
@@ -53,9 +53,14 @@ playButton.addEventListener('click', () => {
     if (draw === true) {
         draw++;
     }
-    //outputting the text for wins, losses draws
+//outputting the text for wins, losses draws
     winCount.textContent = wins;
     lossCount.textContent = losses;
     drawCount.textContent = draw;
     compResult.text = compChoice;   //my code does not work. nooo!!!
+});
+
+resetButton.addEventListener('click', () => {
+    return wins = 0, losses = 0;
+    
 });
